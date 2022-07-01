@@ -27,7 +27,7 @@ public class MenuEconomico extends Menu{
 
     @Override
     public String toString() {
-        String c = String.format("Menu Economico\n%s\n"
+        String c = String.format("Menu Economico\n%s"
                 , super.toString()
         );
         

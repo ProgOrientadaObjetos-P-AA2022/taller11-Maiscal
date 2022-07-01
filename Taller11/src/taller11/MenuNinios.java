@@ -34,10 +34,10 @@ public class MenuNinios extends Menu{
 
     @Override
     public String toString() {
-        String c = String.format("Menu de Ninos\n%s\n"
+        String c = String.format("Menu de Ninos\n%s"
                 , super.toString()
         );
-        c = String.format("%s\n"
+        c = String.format("%s"
                 + "Valor Porcion Helado: %.2f\n"
                 + "Valor Porcion Pastel: %.2f\n"
                 + "Valor Menu: %.2f\n"

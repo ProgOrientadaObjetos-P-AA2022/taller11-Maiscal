@@ -46,6 +46,7 @@ public class MenuDia extends Menu{
                 ,obtenerValorBebida()
                 ,obtenerValorMenu()
         );
+        
         return cadena;
     }
 }

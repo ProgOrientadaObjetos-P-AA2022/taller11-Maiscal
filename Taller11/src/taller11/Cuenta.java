@@ -27,15 +27,18 @@ public class Cuenta {
     public void establecerSubTotal(double s){
         subTotal = s;
     }
-    public void establecerIva(){
-        iva = 0.12;
+    public void establecerIva(double s){
+        iva = s;
     }
     public void establecerValorCancelar(){
+        double ivad;
         for(int i = 0; i < listaMenu.size(); i++){
             subTotal = subTotal + listaMenu.get(i).obtenerValorMenu();
         }
-        iva = subTotal * iva;
-        valorCancelar = subTotal + iva;
+        
+        ivad = (iva / 100 );
+        ivad = ivad * subTotal;
+        valorCancelar = subTotal + ivad;
     }
     
     public String obtenerNombCli(){

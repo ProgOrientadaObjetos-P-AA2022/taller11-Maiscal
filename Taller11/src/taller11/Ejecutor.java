@@ -67,9 +67,9 @@ public class Ejecutor {
         
         c.establecerListaMenu(listamenu);
         c.establecerNombCli("Mario Calva");
+        c.establecerIva(10);
         c.establecerValorCancelar();
         
         System.out.println(c);
     }
-    
 }
