@@ -49,7 +49,7 @@ public class Ejecutor02 {
         mEcono.calcularValorTotal();
         
         //Menu Carta
-        MenuCarta mCarta= new MenuCarta();
+        MenuCarta mCarta = new MenuCarta();
         mCarta.establecerNomPlato("Carta 001");
         mCarta.establecerValorInicialM(6);
         mCarta.establecerValorGuarnicion(1.5);
@@ -65,7 +65,7 @@ public class Ejecutor02 {
         listamenu.add(mDia);
         listamenu.add(mCarta);
         
-        Cuenta c= new Cuenta();
+        Cuenta c = new Cuenta();
         
         c.establecerListaMenu(listamenu);
         c.establecerNombCli("René Elizalde");

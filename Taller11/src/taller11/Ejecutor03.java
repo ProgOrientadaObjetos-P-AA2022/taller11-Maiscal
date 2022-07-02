@@ -50,41 +50,49 @@ public class Ejecutor03 {
         MenuNinios mNinio = new MenuNinios();
         MenuEconomico mEco = new MenuEconomico();
         
-        double v1;
-        double v2;
-        double v3;
-        double v4;
-        
         for(int i = 0; i < datos001.length; i++){
             mNinio.establecerNomPlato(datos001[i][0]);
             mNinio.establecerValorInicialM(Double.parseDouble(datos001[i][1]));
             mNinio.establecerValorPorcionHelada(Double.parseDouble(datos001[i][2]));
             mNinio.establecerValorPorcionPastel(Double.parseDouble(datos001[i][3]));
             
+            mNinio.calcularValorTotal();
+            
             lista.add(mNinio);
         }
         
         for(int i = 0; i < datos002.length; i++){
-            mNinio.establecerNomPlato(datos002[i][0]);
-            mNinio.establecerValorInicialM(Double.parseDouble(datos002[i][1]));
-            mNinio.establecerValorPorcionHelada(Double.parseDouble(datos002[i][2]));
-            mNinio.establecerValorPorcionPastel(Double.parseDouble(datos002[i][3]));
-            
+            mEco.establecerNomPlato(datos002[i][0]);
+            mEco.establecerValorInicialM(Double.parseDouble(datos002[i][1]));
+            mEco.establecerPorcentajeDescuento(Double.parseDouble(datos002[i][2]));
+
+            mEco.calcularValorTotal();
+
             lista.add(mEco);
         }
         
         for(int i = 0; i < datos003.length; i++){
-            mNinio.establecerNomPlato(datos003[i][0]);
-            mNinio.establecerValorInicialM(Double.parseDouble(datos003[i][1]));
-            mNinio.establecerValorPorcionHelada(Double.parseDouble(datos003[i][2]));
-            mNinio.establecerValorPorcionPastel(Double.parseDouble(datos003[i][3]));
+            mDia.establecerNomPlato(datos003[i][0]);
+            mDia.establecerValorInicialM(Double.parseDouble(datos003[i][1]));
+            mDia.establecerValorPostre(Double.parseDouble(datos003[i][2]));
+            mDia.establecerValorBebida(Double.parseDouble(datos003[i][3]));
             
-            lista.add(mNinio);
+            mDia.calcularValorTotal();
+            
+            lista.add(mDia);
         }
         
-        lista.add(mEco);
-        lista.add(mDia);
-        lista.add(mCarta);
+        for(int i = 0; i < datos004.length; i++){
+            mCarta.establecerNomPlato(datos004[i][0]);
+            mCarta.establecerValorInicialM(Double.parseDouble(datos004[i][1]));
+            mCarta.establecerValorGuarnicion(Double.parseDouble(datos004[i][2]));
+            mCarta.establecerValorBebida(Double.parseDouble(datos004[i][3]));
+            mCarta.establecerPorcentajeAdicional(Double.parseDouble(datos004[i][4]));
+            
+            mCarta.calcularValorTotal();
+            
+            lista.add(mCarta);
+        }
         
         // Fin de solución
         
